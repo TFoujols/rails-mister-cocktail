@@ -1,0 +1,102 @@
+.cocktail {
+  height: 165px;
+  margin: 10px 10px 0px 10px;
+}
+
+.cocktail-img {
+  position: relative;
+  height: 70%;
+  // background-size: cover;
+  // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.cocktail-infos {
+  height: 30%;
+  font-size: 10px;
+}
+
+.cocktail-main-name {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.cocktail p {
+  margin-bottom: 0px;
+}
+
+.cocktail-type {
+  color: rgb(207, 50, 45);
+  font-size: 14px;
+}
+
+.cocktail-name {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+
+
+// .card {
+//   height: 165px;
+//   background-color: rgba(0,0,0,0.1);
+//   color: rgba(0,0,0,0.9);
+//   font-family: sans-serif;
+//   margin: 10px 10px 0px 10px;
+// }
+
+// .card-content {
+//   height: 85%;
+//   position: relative;
+// }
+
+// .card-name {
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   right: 10px;
+// }
+
+// .card-infos {
+//   display: flex;
+//   position: absolute;
+//   bottom: 10px;
+//   left: 10px;
+// }
+
+// .card-infos p {
+//   padding-right: 10px;
+// }
+
+// .card-footer {
+//   height: 15%;
+//   display: flex;
+//   align-items: center;
+//   margin: 0px;
+//   padding: 0px 10px;
+//   background-color: white;
+//   color: blue;
+// }
+
+// .card-footer p {
+//   font-size: 10px;
+//   padding-right: 5px;
+// }
+
+
+// h1 {
+//   font-size: 14px;
+//   font-weight: bold;
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+// p {
+//   font-size: 12px;
+//   margin: 0px;
+//   padding: 0px;
+// }
