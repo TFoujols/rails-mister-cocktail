@@ -1,40 +1,55 @@
 <div class="banner">
   <div class="container">
-    <h1>Cocktail finder</h1>
+    <h1>Cocktail Finder</h1>
     <h3>Trouver le cocktail qui vous convient</h3>
-    <h4 class="btn btn-warning">Find my cocktail</h4>
+    <h4 class="btn btn-warning">FIND MY COCKTAIL 🎉</h4>
   </div>
 </div>
-  <div class="container">
+
+
+
+<div class="wrapper">
+  <div class="black container">
+    <h2>Favourites</h2> <hr>
+
+
+    <div class="row">
+
+    <% @cocktails.each do |cocktail| %>
+     <div class="col-xs-12 col-sm-4">
+        <div class="cocktail">
+            <div class="cocktail-img" style='background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://source.unsplash.com/350x350/?cocktail")' alt="">
+              <div class="cocktail-main-name"> <%= cocktail.name %>
+                <ul class="ingredient-list">
+                  <% cocktail.doses.each do |dose| %>
+                    <li> <%= dose.ingredient.name %> : <%= dose.description %> </li>
+                  <% end %>
+                </ul>
+              </div>
+          </div>
+
+          <div class="cocktail-infos">
+            <p class="cocktail-type">Lounge</p>
+            <p class="cocktail-name"><%= cocktail.name %></p>
+          </div>
+        </div>
+    </div>
+    <% end %>
+
+
+  </div>
+
+  </div>
+</div>
+
+
+
+<div class="container">
     <h2>Les Favourites</h2>
     <% @cocktails.each do |cocktail| %>
       <%= cocktail.name %> | <%= link_to "See the cocktail",  cocktail_path(cocktail) %> <br>
     <% end %>
-  </div>
-<%= link_to "Add a new cocktail", new_cocktail_path %>
-
-<div class="container">
-  <div class="row">
-
-
-   <div class="col-xs-12 col-sm-4">
-
-
-      <div class="cocktail">
-          <div class="cocktail-img" style='background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://source.unsplash.com/350x350/?cocktail")' alt=""><p class="cocktail-main-name">Cocktail name</p></div>
-
-        <div class="cocktail-infos">
-          <p class="cocktail-type">COCKTAIL TYPE</p>
-          <p class="cocktail-name">Cocktail name</p>
-          <div class="cocktail-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span class="rate">35 avis</span></div>
-        </div>
-      </div>
-
-
-    </div>
-
-
-  </div>
 </div>
+<%= link_to "Add a new cocktail", new_cocktail_path %>
 <!-- linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
  -->
