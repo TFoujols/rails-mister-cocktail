@@ -1,24 +1,39 @@
 .cocktail {
-  height: 165px;
+  height: 225px;
   margin: 10px 10px 0px 10px;
 }
 
 .cocktail-img {
   position: relative;
   height: 70%;
-  // background-size: cover;
+  background-size: cover;
   // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .cocktail-infos {
   height: 30%;
   font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.cocktail-infos {
+  padding-left: 10px;
+
+}
+
+.btn {
+  padding: 15px 35px;
+  margin-top: 30px;
+  border-radius: 70px !important;
 }
 
 .cocktail-main-name {
   color: white;
+  text-align: left;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: lighter;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -31,12 +46,15 @@
 
 .cocktail-type {
   color: rgb(207, 50, 45);
-  font-size: 14px;
+  font-size: 12px;
+  padding-top: 5px;
+  font-weight: bold;
 }
 
 .cocktail-name {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 

@@ -39,6 +39,8 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass' # Bootstrap v3
 gem 'font-awesome-sass'
 gem 'simple_form'
+# Gemfile
+ruby '2.3.5'
 
 
 group :development, :test do
